@@ -24,7 +24,7 @@ export default function Projects() {
               <p className="text-md   max-w-xs py-4 font-light">
                 Criado para ajudar uma estamparia a controlar a linha de
                 produção, estoque de produtos e estoque de matéria prima.
-                Tableas com paginação, login, modais.
+                Tabelas com paginação, login, modais.
               </p>
             </div>
             <div className="pt-8 flex border-t border-gray-200 w-44 mx-auto  items-center justify-center">

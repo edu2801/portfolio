@@ -3,39 +3,11 @@ import picture from "../assets/images/profile-picture.jpg";
 
 export default function Introduction() {
   return (
-    // <div>
-    //   <h1 className="text-2xl font-medium text-center pt-5">
-    //     Olá, eu sou o Eduardo!
-    //   </h1>
-    //   <div>
-    //     <div className="p-10 md:max-w-xs">
-    //       <img src={picture} alt="profile" className="rounded-lg" />
-    //     </div>
-    //     <div>
-    //       Apaixonado por tecnologia e por ajudar as pessoas, me tornei
-    //       desenvolvedor web com o objetivo de unir minhas paixões para melhorar
-    //       o mundo.
-    //     </div>
-    //   </div>
-    //   <div className="pt-5">
-    //     <h1>Tecnologias</h1>
-    //     <div>
-    //       As tecnologias que domino são: React.js, Next.js, Node.js com express
-    //       e React Native.
-    //     </div>
-    //     <div>
-    //       As tecnologias que eu conheço mas ainda estou aprendendo: Java, Go,
-    //       Angular
-    //     </div>
-    //     <div>Banco de dados: MongoDB e Postgress</div>
-    //   </div>
-    // </div>
-
     <div
       id="introduction"
       className="relative bg-gray-100 p-4 lg:h-screen lg:pt-16"
     >
-      <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-center">
+      <div className="md:grid md:grid-flow-row-dense md:grid-cols-2 md:gap-12 md:items-center">
         <div className="mt-10 -mx-4 md:-mx-12 relative lg:mt-0 lg:col-start-1 lg:px-40">
           <img
             src={picture}

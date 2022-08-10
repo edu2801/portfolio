@@ -1,6 +1,7 @@
 import modal from "../assets/images/modal.png";
 import mural from "../assets/images/mural.png";
 import rest from "../assets/images/rest.png";
+import airgunner from "../assets/images/airgunner.png";
 
 const projectsData = [
   {
@@ -23,6 +24,13 @@ const projectsData = [
     description:
       "Autenticação e controle de usuário em Node.js com express e mongoDB.",
     technology: "Node.js",
+  },
+  {
+    picture: airgunner,
+    title: "AirgunnerApp - Calculadora balística",
+    description:
+      "Realizado em parceria com um atirador que fazia calculos manualmente ou em planilhas. O objetivo é ajudar a maior quantidade de pessoas que praticam esse esporte.",
+    technology: "React Native",
   },
 ];
 

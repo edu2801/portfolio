@@ -1,7 +1,10 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Navbar() {
+import br from "../assets/images/br.png";
+import uk from "../assets/images/uk.png";
+
+export default function Navbar({ isPortuguese, setIsPortuguese }) {
   const [displayNone, setDisplayNone] = useState(true);
 
   return (
@@ -37,19 +40,35 @@ export default function Navbar() {
                     className="text-gray-300   hover:text-gray-800  px-3 py-2 rounded-md text-sm font-medium"
                     href="/#projects"
                   >
-                    Projetos
+                    {isPortuguese ? "Projetos" : "Projects"}
                   </a>
                   <a
                     className="text-gray-300  hover:text-gray-800  px-3 py-2 rounded-md text-sm font-medium"
                     href="/#contact"
                   >
-                    Contato
+                    {isPortuguese ? "Contato" : "Contact"}
                   </a>
                 </div>
               </div>
             </div>
             <div className="block">
               <div className="ml-4 flex items-center md:ml-6">
+                <div className="hidden md:block">
+                  <img
+                    src={br}
+                    alt=""
+                    width="20px"
+                    onClick={() => setIsPortuguese(true)}
+                    className="hover:cursor-pointer"
+                  />
+                  <img
+                    src={uk}
+                    alt=""
+                    width="20px"
+                    onClick={() => setIsPortuguese(false)}
+                    className="hover:cursor-pointer"
+                  />
+                </div>
                 <a
                   href="https://github.com/edu2801"
                   className="p-1 rounded-full text-gray-400 focus:outline-none hover:text-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
@@ -70,6 +89,22 @@ export default function Navbar() {
             </div>
 
             <div className="-mr-2 flex md:hidden">
+              <div className=" md:hidden">
+                <img
+                  src={br}
+                  alt=""
+                  width="20px"
+                  onClick={() => setIsPortuguese(true)}
+                  className="hover:cursor-pointer"
+                />
+                <img
+                  src={uk}
+                  alt=""
+                  width="20px"
+                  onClick={() => setIsPortuguese(false)}
+                  className="hover:cursor-pointer"
+                />
+              </div>
               <button
                 onClick={() => setDisplayNone(!displayNone)}
                 className="text-gray-800  hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
@@ -100,13 +135,13 @@ export default function Navbar() {
               className="text-gray-300  block px-3 py-2 rounded-md text-base font-medium"
               href="/#projects"
             >
-              Projetos
+              {isPortuguese ? "Projetos" : "Projects"}
             </a>
             <a
               className="text-gray-300 hover:text-gray-800  block px-3 py-2 rounded-md text-base font-medium"
               href="/#contact"
             >
-              Contato
+              {isPortuguese ? "Contato" : "Contact"}
             </a>
           </div>
         </div>

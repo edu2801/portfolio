@@ -1,7 +1,7 @@
 import React from "react";
 import picture from "../assets/images/profile-picture.jpg";
 
-export default function Introduction() {
+export default function Introduction({ isPortuguese }) {
   return (
     <div
       id="introduction"
@@ -17,7 +17,7 @@ export default function Introduction() {
         </div>
         <div className="lg:col-start-2 md:pl-20">
           <h4 className="text-2xl leading-8 font-extrabold text-gray-900 pt-4 tracking-tight sm:leading-9">
-            Olá, eu sou o Eduardo!
+            {isPortuguese ? "Olá, eu sou o Eduardo!" : "Hi, I'm Eduardo!"}
           </h4>
           <ul className="mt-10">
             <li>
@@ -38,12 +38,12 @@ export default function Introduction() {
                 </div>
                 <div className="ml-4">
                   <h5 className="text-lg leading-6 text-gray-900  font-bold">
-                    Sobre
+                    {isPortuguese ? "Sobre" : "About"}
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500 ">
-                    Apaixonado por tecnologia e por ajudar as pessoas, me tornei
-                    desenvolvedor web com o objetivo de unir minhas paixões para
-                    melhorar o mundo.
+                    {isPortuguese
+                      ? "Apaixonado por tecnologia e por ajudar as pessoas, me tornei desenvolvedor web com o objetivo de unir minhas paixões para melhorar o mundo."
+                      : "Passionate about technology and helping people, I became a web developer with the purpose to unite my passions to improve the world."}
                   </p>
                 </div>
               </div>
@@ -66,11 +66,12 @@ export default function Introduction() {
                 </div>
                 <div className="ml-4">
                   <h5 className="text-lg leading-6 text-gray-900  font-bold">
-                    Tecnologias
+                    {isPortuguese ? "Tecnologias" : "Technologies"}
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500 ">
-                    As tecnologias que domino são: React.js, Next.js, Node.js
-                    com express e React Native.
+                    {isPortuguese
+                      ? "As tecnologias que domino são: React.js, Next.js, Node.js com express e React Native."
+                      : "The technologies I master are: React.js, Next.js, Node.js with express and React Native."}
                   </p>
                 </div>
               </div>
@@ -93,10 +94,12 @@ export default function Introduction() {
                 </div>
                 <div className="ml-4">
                   <h5 className="text-lg leading-6 text-gray-900  font-bold">
-                    Banco de dados
+                    {isPortuguese ? "Banco de dados" : "Databases"}
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500 ">
-                    Banco de dados: MongoDB e Postgress
+                    {isPortuguese
+                      ? "Banco de dados: MongoDB e Postgress"
+                      : "MongoDB and Postgress"}
                   </p>
                 </div>
               </div>

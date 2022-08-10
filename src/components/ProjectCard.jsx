@@ -18,7 +18,7 @@ export default function ProjectCard({
       <div className="text-center mb-4 opacity-90 border" onClick={expandImage}>
         <img alt="profil" src={picture} className="mx-auto object-cover h-40" />
       </div>
-      <div className="text-center h-44">
+      <div className="text-center min-h-[200px]">
         <p className="text-2xl text-gray-800 ">{title}</p>
         <p className="text-md   max-w-xs py-4 font-light">{description}</p>
       </div>
